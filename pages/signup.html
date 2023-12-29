@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+  </head>
+  <body>
+    <!--==============> The Form Secion <================-->
+
+    <section id="signUp-home">
+      <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+          <div class="col-lg-11 mx-auto">
+            <div class="box py-5 px-4 w-75 m-auto">
+              <h2 class="text-center mb-4">Smart Login System</h2>
+              <div class="mb-4">
+                <input
+                  oninput="NameValidation()"
+                  type="tetx"
+                  name="name"
+                  id="userNameInput"
+                  class="form-control"
+                  placeholder="Enter Your Name"
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  oninput="emailValidation()"
+                  type="email"
+                  name="email"
+                  id="userEmailInput"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="mb-3 text-danger">
+                <input
+                  oninput="passwordValidation()"
+                  type="password"
+                  name="password"
+                  id="userPasswordInput"
+                  class="form-control text-info"
+                  placeholder="Enter Your Password"
+                  aria-describedby="helpId"
+                />
+              </div>
+              <p id="message" class="d-none text-center text-danger"></p>
+              <button
+                id="signupBtn"
+                type="button"
+                class="btn form-control btn-outline-info mt-3"
+              >
+                Sign Up
+              </button>
+
+              <p class="text-center text-light mt-2">
+                Don’t have an account?<span class="ms-2"
+                  ><a href="#" class="text-light" id="moveToSignip">
+                    Sign in</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="sucsess-container"
+      class="sucsess-container bg-dark position-fixed top-0 start-0 bg-opacity-50 w-100 vh-100"
+    >
+      <div class="sucsess-box">
+        <h2>Sucsess</h2>
+        <p class="text-center text-light mt-2">
+          Go to<span class="ms-2 fw-bolder"
+            ><a href="#" class="text-light" id="moveToSignipFromSucsess"> Sign in</a></span
+          >
+        </p>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

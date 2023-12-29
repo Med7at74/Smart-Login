@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART LOGIN</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">SMART LOGIN</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <button id="logout" class="btn btn-outline-warning">
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--==============> The home Secion <================-->
+
+    <section>
+      <div class="container">
+        <div class="row vh-100 justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="home-box text-center text-light p-4">
+              <h2 id="username"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>

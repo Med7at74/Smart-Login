@@ -1,0 +1,33 @@
+#login-home,
+button {
+  background-color: #24353f;
+}
+.form-control {
+  color: lightgray !important;
+}
+h2 {
+  color: #17a2b8;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.form-control::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.btn-outline-info {
+  color: #17a2b8;
+  background-color: transparent;
+  border-color: #17a2b8 !important;
+}
+button:hover {
+  background-color: #17a2b8 !important;
+}
