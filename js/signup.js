@@ -140,3 +140,21 @@ function passwordValidation() {
     return false;
   }
 }
+
+// <!-************** the ways to close the Sucsses Message **************-!>
+
+// 1 =======> click at Esc key
+document.addEventListener("keydown", function (e) {
+  if (e.key == "Escape") {
+    sucsessContainer.classList.remove("d-flex");
+    sucsessContainer.classList.add("d-none");
+  }
+});
+
+// 2 =======> clicking outside modal
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("sucsess-container")) {
+    sucsessContainer.classList.remove("d-flex");
+    sucsessContainer.classList.add("d-none");
+  }
+});
